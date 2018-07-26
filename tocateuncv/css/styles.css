@@ -1,0 +1,323 @@
+
+/* tocateunvals portfolio styles */
+
+
+/* fonts! */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Stardos+Stencil');
+
+/* general styles */
+
+.cv {
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	background-image: url("../imgs/bg.jpg");
+	background-size: cover;
+}
+
+@media (max-width: 800px) {
+	.cv {
+		background-position: 44% top;
+		background-repeat: no-repeat;
+	}
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Stardos Stencil', cursive;
+}
+
+h3 {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-weight: normal;
+	font-size: 56px;
+	color: #fff;
+}
+
+h4 {
+	font-weight: normal;
+	font-size: 24px;
+	margin-top: 16px;
+	margin-bottom: 0;
+	color: #2A3F50;
+}
+
+h5 {
+	font-weight: normal;
+	margin-top: 0;
+}
+
+@media (max-width: 800px) {
+	h3 {
+		font-size: 40px;
+	}
+}
+
+/* layout */
+
+.header_nav {
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	top: 0;
+}
+
+section {
+	height: calc(100vh - 240px);
+	padding: 120px 80px;
+}
+
+@media (max-width: 800px) {
+	section {
+		height: auto;
+		padding: 100px 32px;
+	}
+}
+
+/* header_nav */
+
+.header_nav {
+	background: #fff;
+	box-shadow: 0 0 16px rgba(0, 0, 0,.1)
+}
+
+.logo {
+	display: block;
+	float: left;
+	width: 200px;
+	margin-left: 80px;
+	color: #91B844;
+}
+
+.photo {
+	float: right;
+}
+
+.photo_img {
+	height: 80px;
+	width: 80px;
+}
+
+.nav {
+	height: 80px;
+}
+
+.nav_list {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+}
+
+.nav_list_item {
+	display: block;
+	float: left;
+	height: 80px;
+	padding: 0 24px;
+}
+
+.nav_link,
+.nav_link:visited {
+	line-height: 80px;
+	text-decoration: none;
+	-webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.nav_link:hover {
+	color: #91B844;
+}
+
+.nav > label,
+.nav > input {
+	display: none
+}
+
+
+@media (max-width: 800px) {
+	
+	.logo {
+		margin-left: 32px;
+	}
+
+	.nav {
+		display: block;
+		background: #fff;
+	}
+	   
+	.nav_list,
+	.nav > input {
+		display: none;
+	}
+
+	.nav > label {
+		display: block;
+		font-size: 24px;
+		color: #91B844;
+		position: absolute;
+		right: 96px;
+		top: 24px;
+		width: 24px;
+		padding: 0;
+		cursor: pointer;
+	}
+	   
+	.nav > input:checked + .nav_list {
+		display: block;
+		clear: both;
+		position: relative;
+		top: -8px;
+		padding-left: 0;
+		background:#fff;
+		color: #000;
+		box-shadow: 0 0 16px rgba(0, 0, 0,.1)
+	}
+	   
+	.nav_list_item {
+		display: block;
+		float: none;
+		height: 40px;
+		padding: 16px 0 16px 32px;
+		border-top: 1px solid #eee;
+	}
+	   
+	  .nav_link {
+		line-height: 40px;
+		text-decoration: none;
+		color: #000;
+	}
+}
+
+/* personal info */
+
+.me {
+	font-size: 36px;
+	margin-bottom: 0;
+}
+
+.contact {
+	float: left;
+	width: 33%;
+}
+
+.contact_info {
+	margin-bottom: 16px; 
+}
+
+.contact_type {
+	font-weight: bold; 
+	margin-bottom: 0;
+}
+
+.contact_link {
+	color: black;
+	text-decoration: none;
+}
+
+.about_me {
+	float: left;
+	width: 40%;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+@media (max-width: 800px) {
+	.contact, .about_me {
+		float: none;
+		width: 100%;
+	}
+}
+
+/* experience */
+
+.jobs {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.workplace {
+	width: calc(33% - 64px);
+	height: 200px;
+	margin-right: 16px;
+	margin-bottom: 16px;
+	padding: 0 24px 24px;
+	background: #fff;
+	color: #999;
+}
+
+.job_title {
+	color: #91B844;
+}
+
+@media (max-width: 800px) {
+	.jobs {
+		flex-direction: column;
+	}
+	.workplace {
+		width: calc(100% - 48px);
+		height: auto;
+	}
+}
+
+/* portfolio */
+
+.projects {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.project {
+	width: calc(33% - 16px);
+	height: 160px;
+	box-sizing: border-box;
+	margin-right: 16px;
+	margin-bottom: 16px;
+	background: #fff;
+	-webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.project:hover {
+	margin-top: -5px;
+}
+
+.project_desc {
+	margin-top: 0;
+	color: #999;
+}
+
+.project_link {
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+
+.project_thumb {
+	float: left;
+	margin-bottom: 20px;
+}
+
+.project_thumb_img {
+	width: 120px;
+	height: 120px;
+}
+
+@media (max-width: 800px) {
+	.projects {
+		flex-direction: column;
+	}
+	.project {
+		width: 100%;
+		height: auto;
+		margin-right: 0;
+		padding-right: 16px; 
+	}
+	.project_thumb {
+		margin-bottom: 40px;
+	}
+	.project_thumb_img {
+		width: 80px;
+		height: 80px;
+	}
+}
