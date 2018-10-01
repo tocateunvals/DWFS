@@ -1,0 +1,135 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+
+body {
+  font-family: 'Rammetto One', Arial, sans-serif;
+  margin: 4% auto;
+  width: 980px;
+  min-height: 100%;
+  background-image: url(../images/pattern.jpg);
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  padding: 4px 0;
+  animation: fadein 5s;
+}
+
+li::before {
+  content: "• ";
+  color: #EC6778;
+}
+
+.container {
+  border: 6px solid #000;
+  width: 966px;
+}
+
+.sidebar h1 {
+  color: #E84A5F;
+}
+
+.sidebar h1 span {
+  color: #000;
+}
+
+.sidebar, .board {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+
+.sidebar {
+  background: #ffcc00;
+  padding: 30px;
+  color: #fff;
+}
+
+.board {
+  background: #E84A5F;
+}
+
+#flecha {
+  display: none;
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+#titulo h1 {
+  margin: 0;
+}
+
+#instrucciones h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+#lista-instrucciones {
+  padding: 0;;
+  margin: 8px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+.objetivo-img {
+  width: 100%;
+  height: auto;
+}
+
+#exito {
+  display: none;
+  width: 260px;
+  height: 262px;
+  position: relative;
+  margin-top: -310px;
+  background: #000;
+  padding: 20px;
+  animation: fadein 5s;
+}
+
+#exito p {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+#cantindad {
+  color: #fff;
+}
+
+#juego {
+  width: 600px;
+  height: 600px;
+  border-left: 6px solid #000;
+}
+
+#juego div {
+  text-align: center;
+  animation: fadein 2s;
+}
+
+.pieza {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  float: left;
+}
+
+.pieza-img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
